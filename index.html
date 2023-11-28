@@ -12,14 +12,16 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            font-family: Arial, sans-serif;
         }
 
         #asker, #game {
             text-align: center;
+            margin-bottom: 20px;
         }
 
         table {
-            max-width: 100%;
+            width: 100%;
             border: 2px solid black;
             border-collapse: collapse;
             margin-top: 20px;
@@ -28,20 +30,40 @@
         td {
             width: 33.33%;
             height: 100px;
-            font-family: sans-serif;
-            font-size: 2em;
+            font-size: 1.5em;
             border: 2px solid black;
             color: antiquewhite;
+            cursor: pointer;
+            transition: background-color 0.3s;
         }
 
         #btn {
             display: none;
+            font-size: 1em;
+            padding: 10px;
+            cursor: pointer;
         }
 
-        
+        /* Add this to your CSS */
         .winning-cell {
             color: white;
             background-color: blue;
+        }
+
+        /* Media Query for Tablets */
+        @media only screen and (max-width: 768px) {
+            td {
+                font-size: 1em;
+                height: 80px;
+            }
+        }
+
+        /* Media Query for Phones */
+        @media only screen and (max-width: 480px) {
+            td {
+                font-size: 0.8em;
+                height: 60px;
+            }
         }
     </style>
 </head>
