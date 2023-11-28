@@ -6,65 +6,45 @@
     <title>tic tac toe | game</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        #asker, #game {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        table {
-            width: 100%;
+        table{
+            width: 800px;
+            height: 300px;
+            /* border-color: black; */
             border: 2px solid black;
+            text-align: center;
             border-collapse: collapse;
-            margin-top: 20px;
+            /* border-top-left-radius: 90%; */
         }
-
-        td {
-            width: 33.33%;
-            height: 100px;
-            font-size: 1.5em;
+        td{
+            width: 400px;
+            height: 200px;
+            font-family: sans-serif;
+            font-size: 150px;
+            /* border-top-left-radius:  90%; */
+            /* border-top-color: transparent; */
             border: 2px solid black;
             color: antiquewhite;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
 
-        #btn {
-            display: none;
-            font-size: 1em;
-            padding: 10px;
-            cursor: pointer;
         }
-
         /* Add this to your CSS */
-        .winning-cell {
-            color: white;
-            background-color: blue;
-        }
-
+.winning-cell {
+  color: white; /* You can customize the style */
+  background-color: blue; /* You can customize the style */
+}
         /* Media Query for Tablets */
         @media only screen and (max-width: 768px) {
-            td {
-                font-size: 1em;
-                height: 80px;
-            }
-        }
+    table {
+        width: 100%;
+        max-width: 400px; /* Adjust the max-width as needed */
+        height: auto; /* Adjust height as needed or remove it */
+    }
 
-        /* Media Query for Phones */
-        @media only screen and (max-width: 480px) {
-            td {
-                font-size: 0.8em;
-                height: 60px;
-            }
-        }
+    td {
+        width: 33.33%;
+        height: 100px; /* Adjust the height for smaller screens */
+        font-size: 1em; /* Adjust the font size for smaller screens */
+    }
+}
     </style>
 </head>
 <body>
