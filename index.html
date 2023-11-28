@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic tac toe | game</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table{
+            width: 800px;
+            height: 300px;
+            /* border-color: black; */
+            border: 2px solid black;
+            text-align: center;
+            border-collapse: collapse;
+            /* border-top-left-radius: 90%; */
+        }
+        td{
+            width: 400px;
+            height: 200px;
+            font-family: sans-serif;
+            font-size: 150px;
+            /* border-top-left-radius:  90%; */
+            /* border-top-color: transparent; */
+            border: 2px solid black;
+            color: antiquewhite;
+
+        }
+        /* Add this to your CSS */
+.winning-cell {
+  color: white; /* You can customize the style */
+  background-color: blue; /* You can customize the style */
+}
+
+    </style>
+</head>
+<body>
+    <div id="asker" >
+    <input type="text" id="firstUser" minlength="1" maxlength="1">
+    <input type="text" id="secUser" minlength="1" maxlength="1">
+    <button onclick="startGame()">start game</button></div>
+    <button style="display: none;" id="btn" >want to play again ?</button>
+    <br><div id="game" style="display: none;">
+        <table>
+            <tr>
+                <td onclick="ticTac(this)"></td>
+                <td onclick="ticTac(this)"></td>
+                <td onclick="ticTac(this)"></td>
+            </tr>
+            <tr>
+                <td onclick="ticTac(this)"></td>
+                <td onclick="ticTac(this)"></td>
+                <td onclick="ticTac(this)"></td>
+            </tr>
+            <tr>
+                <td onclick="ticTac(this)"></td>
+                <td onclick="ticTac(this)"></td>
+                <td onclick="ticTac(this)"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
